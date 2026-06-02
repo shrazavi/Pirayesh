@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/semicircular"
+ android:height="35dp"
+        android:width="35dp"
+        android:gravity="center"
+        />
+
+    <item android:drawable="@drawable/ic_releases"
+
+        />
+
+</layer-list>

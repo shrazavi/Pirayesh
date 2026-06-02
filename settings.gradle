@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()  // افزودن google() در اینجا
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url 'https://maven.google.com/' }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)  // این بخش را تغییر ندهید
+    repositories {
+        google()  // افزودن google() در اینجا
+        mavenCentral()
+        maven { url 'https://maven.google.com/' }
+        maven { url 'https://jitpack.io' }
+    }
+}

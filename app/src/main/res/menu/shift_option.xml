@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <item
+        android:id="@+id/editshift"
+        android:enabled="true"
+        android:icon="@drawable/ic_edit"
+        android:title="ویرایش"
+        />
+    <item
+        android:id="@+id/deleteshift"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete"
+        android:title="حذف"
+        />
+</menu>

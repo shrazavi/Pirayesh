@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shrazavi.pirayesh">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:name=".G"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/pirayeshlogo"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/pirayeshlogo"
+        android:supportsRtl="false"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Pirayesh"
+        >
+        <activity
+            android:name=".Activity.ActivityStart"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VakilSocialstart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ActivityLogin"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VakilSociallogin"></activity>
+        <activity
+            android:name=".Activity.ActivityMain"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VakilSocialmain"
+            tools:ignore="Instantiatable"></activity>
+        <activity android:name=".Activity.ActivityImagePicker"></activity>
+        <activity
+            android:name=".Activity.ActivityValidation"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VakilSocialsignout"></activity>
+        <activity
+            android:name=".Activity.ActivityTimework"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityName"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityBlockuser"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityShift"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityAbout"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityTicketMessage"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VakilSocialchat"></activity>
+
+        <activity android:name=".Activity.ActivityFinalPayment"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.ActivityImageView"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityLaw"
+            android:theme="@style/Theme.Law"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Activity.ActivityHelp"
+            android:theme="@style/Theme.Law"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name=".Activity.ActivityOption"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VakilSocialmain"></activity>
+
+        <activity
+            android:name=".Activity.ActivityPayment2"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityNobatDetail"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity android:name=".Activity.ActivityPlayVideo"></activity>
+        <activity
+            android:name=".Activity.ActivityLocation"
+            android:theme="@style/Theme.Timework"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.ActivityReserve2"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityVisit"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityVisit2"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityNobat"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivitySetting"
+            android:theme="@style/Theme.Timework"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.ActivityRating"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework">
+
+        </activity>
+        <activity
+            android:name=".Activity.ActivityProfileBr"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityProfileUser"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivitySupport"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityTransaction"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+        <activity
+            android:name=".Activity.ActivityTransactionDetail"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework"></activity>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Timework" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+
+
+    </application>
+
+</manifest>

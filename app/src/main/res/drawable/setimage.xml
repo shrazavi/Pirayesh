@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/corner_image"
+        android:gravity="center_horizontal|bottom"
+        />
+
+    <item android:drawable="@drawable/ic_gallery"
+        android:height="50dp"
+        android:width="50dp"
+        android:top="85dp"
+        android:gravity="center_horizontal"
+        />
+
+</layer-list>

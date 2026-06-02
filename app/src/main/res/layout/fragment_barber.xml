@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_fr_barberlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_horizontal"
+    android:background="@drawable/gradient"
+    app:layout_anchorGravity="center_horizontal|center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_edt_filter_shahr"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="10dp"
+                android:gravity="center|top"
+                android:hint="شهر">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_filter_shahr"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:completionThreshold="1"
+                    android:gravity="center_vertical"
+                    android:inputType="none"
+
+                    android:paddingEnd="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    tools:text="کاشان" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_edt_filter_ostan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center|top"
+                android:hint="استان">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_filter_ostan"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:completionThreshold="1"
+                    android:gravity="center_vertical"
+                    android:inputType="none"
+                    android:paddingEnd="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    tools:text="اصفهان" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lay_edt_search"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0"
+
+            android:gravity="top"
+            android:hint="نام آرایشگاه"
+            tools:visibility="visible">
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:completionThreshold="1"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:text="پیرایش صادق" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_barber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:clipToPadding="true"
+            android:paddingBottom="75dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
