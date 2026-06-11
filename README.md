@@ -1,3 +1,6 @@
+![Java](https://img.shields.io/badge/Java-Android-orange)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
 # Pirayesh – Salon Booking & Scheduling Platform
 
 A service booking platform designed for barbershops and beauty salons, enabling customers to schedule appointments while helping businesses manage their availability and daily operations more efficiently.
